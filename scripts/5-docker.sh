@@ -8,4 +8,4 @@ yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/d
 yum makecache fast
 yum -y install docker
 # Step 4: 开启Docker服务
-service docker start
+systemctl enable docker && systemctl start docker 
