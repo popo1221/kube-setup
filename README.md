@@ -8,16 +8,16 @@
 swapoff -a
 swapoff -a && sysctl -w vm.swappiness=0
 
+# 3. 关掉SELinux 
 # /etc/selinux/config
 # SELinux = disabled
+setenforece 0
 ```
 
 2. 关掉防火墙
 ```bash
 systemctl stop firewalld
 systemctl disable firewalld
-# vim /etc/selinux/config
-# SELINUX=disabled
 ```
 
 3. 配置iptables
