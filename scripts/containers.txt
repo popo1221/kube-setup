@@ -1,0 +1,7 @@
+CONTAINER ID        IMAGE                        COMMAND                  CREATED             STATUS              PORTS               NAMES
+87beedc83212        f3fcd0775c4e                 "kube-controller-m..."   4 minutes ago       Up 4 minutes                            k8s_kube-controller-manager_kube-controller-manager-master1_kube-system_dff76a5bc8b3ec6058de0bfb192f3142_0
+290b7ca85d29        0dcb3dea0db1                 "kube-scheduler --..."   4 minutes ago       Up 4 minutes                            k8s_kube-scheduler_kube-scheduler-master1_kube-system_aa8d5cab3ea096315de0c2003230d4f9_0
+362ec72ffa13        k8s.gcr.io/pause-amd64:3.1   "/pause"                 4 minutes ago       Up 4 minutes                            k8s_POD_kube-controller-manager-master1_kube-system_dff76a5bc8b3ec6058de0bfb192f3142_0
+a49e94393310        k8s.gcr.io/pause-amd64:3.1   "/pause"                 4 minutes ago       Up 4 minutes                            k8s_POD_kube-apiserver-master1_kube-system_1d5450ba0a7d0f66f831baa601ee2e0b_0
+8457e3f3f50c        k8s.gcr.io/pause-amd64:3.1   "/pause"                 4 minutes ago       Up 4 minutes                            k8s_POD_etcd-master1_kube-system_51173c3c0ae86acf02fc27f8085f400b_0
+92a6830990f4        k8s.gcr.io/pause-amd64:3.1   "/pause"                 4 minutes ago       Up 4 minutes                            k8s_POD_kube-scheduler-master1_kube-system_aa8d5cab3ea096315de0c2003230d4f9_0

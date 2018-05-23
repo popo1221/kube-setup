@@ -1,0 +1,19 @@
+apiVersion: kubeadm.k8s.io/v1alpha1
+kind: MasterConfiguration
+api:
+  advertiseAddress: 10.211.55.14
+etcd:
+  endpoints:
+    - https://10.211.55.13:2379
+    - https://10.211.55.14:2379
+    - https://10.211.55.15:2379
+  caFile: /etc/kubernetes/pki/etcd/ca.pem
+  certFile: /etc/kubernetes/pki/etcd/client.pem
+  keyFile: /etc/kubernetes/pki/etcd/client-key.pem
+networking:
+  podSubnet: 192.168.0.0/16
+apiServerCertSANs:
+  - 172.24.32.132
+apiServerExtraArgs:
+  apiserver-count: "3"
+kubernetesVersion: v1.10.2
