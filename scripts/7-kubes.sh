@@ -10,7 +10,8 @@ gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors
 EOF
 setenforce 0
 yum install -y kubelet kubeadm kubectl
-# systemctl enable kubelet && systemctl start kubelet
+systemctl enable kubelet 
+# && systemctl start kubelet
 
 # cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 # [kubernetes]
